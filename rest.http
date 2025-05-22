@@ -1,0 +1,30 @@
+GET http://localhost:4000/task
+
+###
+GET http://localhost:4000/task/6812d32eb3c10b352ba2b2a3
+
+###
+
+POST http://localhost:4000/task
+Content-Type: application/json
+
+{
+    "task": "TASK 100",
+    "hour" : 100,
+    "type" : "good"
+}
+
+###
+
+PATCH http://localhost:4000/task/681aa14c988d40f8a9685053
+Content-Type: application/json
+
+{
+    "task": "LAST TASK"
+}
+
+###
+
+DELETE http://localhost:4000/task/681aa0f4f6262280cac6cf45
+
+###
